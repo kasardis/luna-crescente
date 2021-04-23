@@ -1,0 +1,520 @@
+body{
+    background-color: #f5f4f2;
+    font-family: "Raleway";
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+h2{
+    font-family: "Poiret One";
+}
+
+h1, nav h2{
+    font-family: "Dancing Script";
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header img{
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 2px 2px black;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: #ff3838;
+    text-shadow: 2px 2px black;
+}
+
+header{
+    width: 100%;
+    padding: 200px 0;
+    background-image: url("photos/logo/ksiezyc.png");
+    background-color: black;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 3px solid #ff3838;
+    border-bottom: 3px solid #ff3838;
+    margin-top: 90px;
+    margin-left: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3e4247;
+    border-bottom: 1px solid s#ff3838;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    font-size: 25px;
+    justify-content: space-between;
+    z-index: 5;
+}
+nav a{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+nav a:hover{
+    color: #ff3838;
+}
+
+nav li{
+    font-family: "Poiret One";
+    font-weight: bold;
+}
+nav h2{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+nav ul{
+    margin-right: 10px;
+}
+
+nav li{
+    display: inline;
+    padding-right: 40px;
+}
+
+#about div{
+    width: 49%;
+    height: 500px;
+}
+
+#onas-p{
+    border-right: 1px solid #ff3838;
+    float: left;
+    text-align: center;
+}
+
+#about p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+#about h2{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 0; 
+}
+
+#about hr{
+    width: 40px;
+    border-top: 2px solid #ff3838;
+    margin: 20px auto;
+}
+
+#kolaż{
+    float: right;
+}
+
+#kolaż img{
+    position: relative;
+    border: 2px solid #ff3838;
+}
+
+#img1{
+    left: 120px;
+    top: 150px;
+    width: 300px;
+    z-index: 1;
+}
+
+#img2{
+    left: -30px;
+    top: 250px;
+    width: 200px;
+    z-index: 2;
+}
+
+#img3{
+    left: -160px;
+    top: 30px;
+    width: 200px;
+    z-index: 2;
+}
+
+footer{
+    background-color: #3e4247;
+    color: white;
+    font-family: "Poiret One";
+    height: 100px;
+    padding: 40px;
+    font-size: 17px;
+    border-top: 2px solid #ff3838;
+}
+
+section{
+    position: static;
+}
+
+#opinie{
+    margin-top:500px;
+    background-color: #3e4247;
+    color: white;
+    border-top: 2px solid #ff3838;
+    border-bottom: 2px solid #ff3838;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.opinia1{
+    width: 25%;
+    float: left;
+    margin-left: 23%;
+    margin-right: 2%;
+    margin-bottom: 40px;
+}
+
+.opinia2{
+    width: 25%;
+    float: right;
+    margin-right: 23%;
+    margin-left: 2%;
+    margin-bottom: 40px;
+}
+
+.opinia3{
+    margin: 40px auto;
+    width: 50%;
+}
+
+#opinie p{
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+#opinie h2{
+    font-size: 40px;
+}
+
+#kontakt-index h2{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0;
+}
+
+.mapka{
+    margin-bottom: 40px;
+    border-top: 1px solid #3e4247;
+    border-bottom: 1px solid #3e4247;
+}
+
+#zrodla{
+    padding: 30px;
+    border-top: 2px solid #ff3838;
+    border-bottom: 2px solid #ff3838;
+    font-family: "Poirot One";
+    font-size: 19px;    
+}
+
+#zrodla h2{
+    margin-top: 10px;
+}
+
+#zrodla li{
+    list-style-type: circle;
+    margin: 4px;
+}
+
+#zrodla a:hover{
+    color: #ff3838;
+}
+
+#zrodla a:active{
+    font-style: italic;
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 50px;
+    text-align: center;
+    justify-items: center;
+}
+
+#galeria img{
+    width: 90%;
+    margin: 0 auto;
+    border: 4px outset #ff3838;
+    box-shadow: 5px 5px 5px #3e42478e;
+    filter: brightness(0.8);
+}
+
+@keyframes filtr {
+    0%{
+        filter: brightness(0.8);
+    }
+    100%{
+        filter: brightness(1.1);
+    }
+}
+
+#galeria img:hover{
+    animation-name: filtr;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    filter: brightness(1.1);
+}
+
+#galeria h3{
+    font-size: 25px;
+    text-shadow: 1px 1px 5px #ff3838;
+}
+
+#h2-galeria, #h2-menu, #blog h2{
+    font-size: 45px;
+    text-align: center;
+    margin: 45px 0;
+    font-family: "Train One";
+    text-shadow: 2px 2px #ff3838b0;
+}
+
+#krzyżyk{
+    width: 50px;
+    display: block;
+    position: absolute;
+    right: 10px;
+}
+
+#photo{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+#okno{
+    background-color: #676e77;
+    z-index: 10;
+    width: 50%;
+    height: 70%;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    padding: 20px;
+    border: 2px solid #ff3838;
+    display: none;
+}
+
+#nazwa{
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: "Train One";
+}
+
+#menu-nav img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+#menu-nav span{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+#menu-nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menu-nav li{
+    width: 130px;
+}
+
+#menu-nav hr{
+    width: 80%;
+    border-top: 1px solid #ff3838;
+    margin-top: 30px;
+}
+
+#link-przystawki img{
+    border: 3px outset #ff3838;
+}
+
+#link-przystawki span{
+    color: #ff3838;
+    font-weight: bold;
+}
+
+#menu h2{
+    text-align: center;
+    font-family: "Train One";
+    font-size: 35px;
+}
+
+#menu h3{
+    text-align: center;
+    font-family: "Poiret One";
+    font-size: 30px;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.menu-type{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: none;
+}
+
+#przystawki{
+    display: block;
+}
+
+#kontakt h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+#kontakt img{
+    height: 40px;
+}
+
+#kontakt span{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+#kontakt ul{
+    margin-left: 20%;
+}
+
+#kontakt a img{
+    height: 60px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+#kontakt a img:hover{
+    height: 59px;
+}
+
+#kontakt a img:active{
+    height: 56px;
+}
+
+#godziny{
+    text-align: center;
+}
+
+#godziny h2{
+    margin-bottom: 27px;
+    margin-top: 50px;
+}
+
+#godziny p{
+    font-size: 27px;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+
+#timer{
+    background-color: #3e4247;
+    color: #ff3838;
+    font-family: "Train One";
+    text-shadow: 2px 1px 1px whitesmoke;
+    font-size: 40px;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    padding: 30px 0;
+    border: 5px dashed #ff3838;
+}
+
+#blog{
+    width: 60%;
+    margin: 20px auto;
+}
+
+#blog p{
+    text-align: justify;
+    margin: 0;
+    text-indent: 100px;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+#blog h3{
+    text-align: center;
+    font-size: 23px;
+    margin-top: 50px;
+}
+
+#blog iframe{
+    width: 100%;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.red{
+    color: #ff3838;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.captialize{
+    text-transform: capitalize;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.crossed{
+    text-decoration: line-through;
+}
+
+.over-under{
+    text-decoration: overline underline;
+}
+
+.bigger{
+    font-size: 25px;
+}
+
+#stworzenia-desktop img, #stworzenia-mobile img{
+    display: block;
+    margin: 40px auto;
+}
