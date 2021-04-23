@@ -517,13 +517,18 @@ section{
 #stworzenia-desktop img, #stworzenia-mobile img{
     display: block;
     margin: 40px auto;
+    border: 10px outset #3e4247;
 }
 
 .noscript{
     display: block;
     position: static;
-    text-transform: italic;
+    font-style: italic;
     font-size: 25px;
     margin: 50px;
     text-align: center;
+}
+
+#calendar{
+    border: 3px dashed #ff3838;
 }
