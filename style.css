@@ -518,3 +518,12 @@ section{
     display: block;
     margin: 40px auto;
 }
+
+.noscript{
+    display: block;
+    position: static;
+    text-transform: italic;
+    font-size: 25px;
+    margin: 50px;
+    text-align: center;
+}
