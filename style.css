@@ -293,13 +293,14 @@ section{
     width: 50px;
     display: block;
     position: absolute;
-    right: 10px;
+    right: 20px;
 }
 
 #photo{
     width: 70%;
-    margin: 0 auto;
+    left: 15%;
     display: block;
+    position: absolute;
 }
 
 #okno{
@@ -324,12 +325,19 @@ section{
     font-family: "Train One";
 }
 
+#prev, #next{
+    height: 10%;
+    position: absolute;
+    top: 45%;
+    z-index: 11;
+}
+
 #prev{
-    width: 60px;
+    left: 10px;
 }
 
 #next{
-    width: 60px;
+    right: 10px;
 }
 
 #menu-nav img{
