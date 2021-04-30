@@ -281,7 +281,7 @@ section{
     text-shadow: 1px 1px 5px #ff3838;
 }
 
-#h2-galeria, #h2-menu, #blog h2{
+#h2-galeria, #h2-menu, #blog h2, #rezerwacja h2{
     font-size: 45px;
     text-align: center;
     margin: 45px 0;
@@ -547,4 +547,21 @@ section{
 
 #calendar{
     border: 3px dashed #ff3838;
+}
+
+label, input{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+form{
+    width: 35%;
+    margin: 20px auto;
+}
+
+#submit{
+    display: block;
+    margin: 0 auto;
+    font-size: 17px;
 }
