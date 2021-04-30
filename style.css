@@ -324,6 +324,14 @@ section{
     font-family: "Train One";
 }
 
+#prev{
+    width: 60px;
+}
+
+#next{
+    width: 60px;
+}
+
 #menu-nav img{
     width: 100px;
     border-radius: 50%;
