@@ -31,7 +31,6 @@ header img{
 }
 
 h1{
-    font-size: 50px;
     text-align: center;
     color: #ff3838;
     text-shadow: 2px 2px black;
@@ -39,10 +38,8 @@ h1{
 
 header{
     width: 100%;
-    padding: 200px 0;
     background-image: url("photos/logo/ksiezyc.png");
     background-color: black;
-    background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
     border-top: 3px solid #ff3838;
@@ -157,7 +154,6 @@ footer{
     font-family: "Poiret One";
     height: 100px;
     padding: 40px;
-    font-size: 17px;
     border-top: 2px solid #ff3838;
 }
 
@@ -566,11 +562,48 @@ form{
     font-size: 17px;
 }
 
-
+/*Desktop*/
 @media only screen and (min-width: 769px){
-
+    footer{
+        font-size: 17px;
+    }
+    header{
+        background-size: 70%;
+        padding: 200px 0;
+    }
+    h1{
+        font-size: 50px;
+    }
 }
 
+/*Mobile*/
 @media only screen and (max-width: 768px){
-    
+    footer{
+        font-size: 14px;
+    }
+    header{
+        background-size: 100%;
+        padding: 100px 0;
+    }
+    h1{
+        font-size: 40px;
+    }
 }
+
+/*tablety*/
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    header{
+        background-size: 80%;
+    }
+}
+
+/*L*/
+@media only screen and (max-width: 425px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+/*M*/
+
+/*S*/
