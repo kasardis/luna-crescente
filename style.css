@@ -110,27 +110,6 @@ section{
     text-align: center;
 }
 
-.opinia1{
-    width: 25%;
-    float: left;
-    margin-left: 23%;
-    margin-right: 2%;
-    margin-bottom: 40px;
-}
-
-.opinia2{
-    width: 25%;
-    float: right;
-    margin-right: 23%;
-    margin-left: 2%;
-    margin-bottom: 40px;
-}
-
-.opinia3{
-    margin: 40px auto;
-    width: 50%;
-}
-
 #opinie p{
     margin: 10px auto;
     font-size: 20px;
@@ -546,30 +525,44 @@ form{
         width: 49%;
         height: 500px;
     }
-    
     #onas-p{
         border-right: 1px solid #ff3838;
         float: left;
         text-align: center;
     }
-    
     #about p{
         width: 70%;
         margin: 0 auto;
         font-size: 20px;
         line-height: 1.3;
     }
-    
     #about h2{
         font-size: 40px;
         margin-top: 80px;
         margin-bottom: 0; 
     }
-    
     #about hr{
         width: 40px;
         border-top: 2px solid #ff3838;
         margin: 20px auto;
+    }
+    .opinia1{
+        width: 25%;
+        float: left;
+        margin-left: 23%;
+        margin-right: 2%;
+        margin-bottom: 40px;
+    }
+    .opinia2{
+        width: 25%;
+        float: right;
+        margin-right: 23%;
+        margin-left: 2%;
+        margin-bottom: 40px;
+    }
+    .opinia3{
+        margin: 40px auto;
+        width: 50%;
     }
 }
 
@@ -668,6 +661,9 @@ form{
         border-top: 2px solid #ff3838;
         margin: 20px auto;
     }
+    .opinia1, .opinia2, .opinia3{
+        width: 90%;
+    }
 }
 
 /*tablety*/
@@ -685,6 +681,9 @@ form{
         width: 70%;
         font-size: 20px;
         line-height: 1.3;
+    }
+    .opinia1, .opinia2, .opinia3{
+        margin: 60px auto;
     }
 }
 
@@ -712,6 +711,9 @@ form{
     }
     #about h2{
         margin-top: 20px;
+    }
+    .opinia1, .opinia2, .opinia3{
+        margin: 30px auto;
     }
 }
 
