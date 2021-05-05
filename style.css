@@ -664,6 +664,11 @@ form{
     .opinia1, .opinia2, .opinia3{
         width: 90%;
     }
+    #menu-nav ul{
+        flex-wrap: wrap;
+        padding-left: 0;
+        width: 100%;
+    }
 }
 
 /*tablety*/
