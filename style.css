@@ -66,7 +66,7 @@ nav a{
     text-shadow: 2px 2px black;
 }
 
-nav a:hover{
+#nav-desktop a:hover{
     color: #ff3838;
 }
 
@@ -79,13 +79,39 @@ nav h2{
     margin-top: 20px;
 }
 
-nav ul{
+#nav-desktop{
     margin-right: 10px;
 }
 
-nav li{
+#nav-desktop li{
     display: inline;
     padding-right: 40px;
+}
+
+#nav-mobile{
+    position: fixed;
+    top: 92px;
+    right: 0;
+    text-align: right;
+    margin-top: 0;
+}
+
+#nav-mobile li{
+    padding: 15px;
+    background-color: #ff3838;
+    width: 150px;
+    box-shadow: rgb(122, 0, 0) 0px 0px 70px 10px inset;
+}
+
+#nav-mobile li:hover{
+    box-shadow: rgb(255, 170, 170) 0px 0px 50px 5px inset;
+}
+
+#nav-img{
+    height: 40px;
+    margin-right: 20px;
+    filter: invert(100%);
+    margin-top: 25px;
 }
 
 footer{
@@ -564,6 +590,12 @@ form{
         margin: 40px auto;
         width: 50%;
     }
+    #nav-mobile{
+        display: none;
+    }
+    #nav-img{
+        display: none;
+    }
 }
 
 /*Mobile*/
@@ -668,6 +700,12 @@ form{
         flex-wrap: wrap;
         padding-left: 0;
         width: 100%;
+    }
+    #nav-desktop{
+        display: none;
+    }
+    #nav-mobile{
+        display: none;
     }
 }
 
