@@ -447,10 +447,19 @@ form{
     margin: 20px auto;
 }
 
-#submit{
+#submit, #powrot{
     display: block;
     margin: 0 auto;
     font-size: 17px;
+}
+
+label{
+    margin-right: 20px;
+}
+
+form p{
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 /*Desktop*/

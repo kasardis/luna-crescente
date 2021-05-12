@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Train+One&display=swap" rel="stylesheet">
-    </head>
+    </head> 
     <body>
         <nav>
             <h2>
@@ -41,15 +41,15 @@
         <main id="rezerwacja">
             <noscript class="noscript">Żeby ta strona działała poprawnie włącz JavaScript</noscript>
             <h2>Rezerwacja</h2>
-            <form id="form1">
+            <form id="form">
                 <label for="liczbaOsob">Liczba osób: </label>
-                <input type="number" min="1" max="20" name="liczbaOsob"><br>
+                <input type="number" min="1" max="20" name="liczbaOsob" required><br>
                 <label for="nazwisko">Rezerwacja na nazwisko: </label>
-                <input type="text" name="nazwisko"><br>
+                <input type="text" name="nazwisko" required><br>
                 <label for="numerTelefonu">Numer telefonu: </label>
-                <input type="text" name="numerTelefonu"><br>
+                <input type="text" name="numerTelefonu" required><br>
                 <label for="godzina">Godzina: </label>
-                <input list="godzina" name="godzina"><br>
+                <input list="godzina" name="godzina" required><br>
                 <datalist id="godzina">
                     <option value="12:30">12:30</option>
                     <option value="13:00">13:00</option>
@@ -70,13 +70,12 @@
                     <option value="20:30">20:30</option>
                 </datalist>
                 <label for="data">Data: </label>
-                <input list="data" name="data"><br>
+                <input list="data" name="data" required><br>
                 <datalist id="data">
-
                 </datalist>
                 <input type="submit" value="Złóż rezerwację" id="submit"> 
             </form>
-            <div id="informacje"></div>
+            <script src="rezerwacja.js"></script>
         </main>
         <footer>
             &copy;Katarzyna Szwed & Agata Szczepańska
