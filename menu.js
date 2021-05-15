@@ -1,3 +1,4 @@
+//Setup
 let sources = {
     "link-przystawki": document.getElementById("przystawki"),
     "link-zupy": document.getElementById("zupy"),
@@ -10,6 +11,7 @@ let sources = {
 
 let state = "link-przystawki";
 
+//Zmiany styli
 function defaultStyle(element){
     element.children[0].style.border = "0px";
     element.children[1].style.fontWeight = "normal";
@@ -22,6 +24,7 @@ function clickedStyle(element){
     element.children[1].style.color = "#ff3838";
 }
 
+//Główna funkcja
 function change(){
     defaultStyle(document.getElementById(state));
     sources[state].style.display = "none";
@@ -30,10 +33,7 @@ function change(){
     clickedStyle(document.getElementById(state));
 }
 
-document.getElementById("link-przystawki").addEventListener("click", change);
-document.getElementById("link-zupy").addEventListener("click", change);
-document.getElementById("link-glowne").addEventListener("click", change);
-document.getElementById("link-salatki").addEventListener("click", change);
-document.getElementById("link-dodatki").addEventListener("click", change);
-document.getElementById("link-napoje").addEventListener("click", change);
-document.getElementById("link-desery").addEventListener("click", change);
+//Dodanie wartości onclick
+for (let i = 0; i < document.getElementById("menu-nav").children.length; i++){
+    document.getElementById("menu-nav").children[i].addEventListener("click", change);
+}

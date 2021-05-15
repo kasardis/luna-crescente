@@ -1,3 +1,4 @@
+//Program, który zmienia widoczność nav, wykorzystywany na urządzeniach mobilnych
 function toggle_nav(){
     if (document.getElementById("nav-mobile").style.display == "none"){
         document.getElementById("nav-mobile").style.display = "block";

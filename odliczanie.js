@@ -1,3 +1,4 @@
+//Funkcja pomocnicza
 function displayNumber(number){
     if (number < 10) {
         number = '0' + number;
@@ -7,6 +8,7 @@ function displayNumber(number){
     }
 }
 
+//Główna funkcja
 function odliczanie(){
     let timer = document.getElementById("timer");
     let current = new Date();
@@ -32,6 +34,7 @@ function odliczanie(){
     } 
 }
 
+//Wywołanie funkcji
 odliczanie();
 let timerID = setInterval(() => {
     odliczanie();

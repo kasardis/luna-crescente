@@ -1,8 +1,10 @@
+//Deklaracja zmiennych
 let date = new Date();
 let godziny = document.getElementById("godzina");
 let daty = document.getElementById("data");
 let form = document.getElementById("form");
 
+//Ustawienie godzin tak, żeby nie można było zamówić stolika na godzinę, która już minęła
 function godziny_setup(){
     if(date.getHours() > 18){
         date.setDate(date.getDate() + 1);
@@ -16,6 +18,7 @@ function godziny_setup(){
     }
 }
 
+//Funkcja pomocnicza, wyświetlenie liczby jednocyfrowej z zerem na początku
 function displayNumber(number){
     if (number < 10) {
         number = '0' + number;
@@ -25,6 +28,7 @@ function displayNumber(number){
     }
 }
 
+//Ustawienie dat, żeby były aktualne
 function daty_setup(){
     for(let i = 0; i < 7; i++){
         let d = date.getDate();
@@ -36,9 +40,11 @@ function daty_setup(){
     }
 }
 
+//Wywołanie funkcji
 godziny_setup();
 daty_setup();
 
+//Funkcje sprawdzające, czy wpisane dane są poprawne
 function validate_datalist(datalistId){
     let datalist = document.getElementById(datalistId);
     for(let i = 0; i < datalist.children.length; i++){
@@ -65,6 +71,7 @@ function validate_string(str){
     }
 }
 
+//Funkcja sprawdzająca formularz
 function validate(){
     if(!(validate_datalist("godzina") && validate_datalist("data"))){
         form.innerHTML = "<p style='text-align: center'>Wpisz poprawną godzinę i datę</p><button id='powrot'>Zmień</button>";
@@ -90,4 +97,5 @@ function validate(){
     }
 }
 
+//Dodanie onclick
 document.getElementById("submit").onclick = validate;
