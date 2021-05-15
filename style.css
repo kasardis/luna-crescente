@@ -67,7 +67,7 @@ nav a{
     text-shadow: 2px 2px black;
 }
 
-#nav-desktop a:hover, #nav-h2:hover{
+#nav-desktop a:hover, #nav-h2 a:hover{
     color: #ff3838;
 }
 
